@@ -1,7 +1,9 @@
 module GDAL
 
 using PROJ_jll
+using Pkg; Pkg.build("GDAL_jll")
 using GDAL_jll
+
 using MozillaCACerts_jll: cacert
 using CEnum
 
